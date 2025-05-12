@@ -70,3 +70,23 @@ inflation %>%
   theme(legend.position = c(.1, .9)) +
   NULL
 ```
+
+```{r}
+# use a function without loading the package:
+# package::function
+usethis::use_git_config(
+  user.name = "Hermann Siebel", # <-- change to your name
+  user.email = "hermann.siebel@fu-berlin.de", # <-- and your email
+  init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
+
+usethis::use_git()
+
+usethis::create_github_token(description = "Token for Repro Workshop 2025")
+
+gitcreds::gitcreds_set()
+
+usethis::gh_token_help()
+
+usethis::use_github()
+```
+
