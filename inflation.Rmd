@@ -45,11 +45,6 @@ I **quote**:
 with(mtcars, plot(hp, mpg))
 ```
 
-```{python}
-print("Hello World! Python here, do you miss R already?")
-```
-
-
 We have `32` cars.
 
 For this dataset the Bank of England asked `r prettyNum(nrow(inflation), big.mark = ".", decimal.mark = ",")` people for their opinion on the perceived and expected inflation. The survey has run quarterly since `r min(inflation$year)`.
@@ -70,23 +65,3 @@ inflation %>%
   theme(legend.position = c(.1, .9)) +
   NULL
 ```
-
-```{r}
-# use a function without loading the package:
-# package::function
-usethis::use_git_config(
-  user.name = "hermannsiebel", # <-- change to your name
-  user.email = "hermann.siebel@gmx.de", # <-- and your email
-  init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
-
-usethis::use_git()
-
-usethis::create_github_token(description = "Token for Repro Workshop 2025 3")
-
-gitcreds::gitcreds_set()
-
-usethis::gh_token_help()
-
-usethis::use_github()
-```
-
