@@ -1,5 +1,5 @@
 ---
-title: "Inflation Data"
+title: "Inflation Data 2"
 author: "Hermann Siebel"
 date: "14.03.1999"
 output: pdf_document
