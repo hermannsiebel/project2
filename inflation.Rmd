@@ -61,7 +61,7 @@ inflation %>%
   geom_line(aes(date, value, color = name)) +
   theme_minimal() +
   ylab("subjective inflation in %-points") +
-  labs(color = "white") +
+  labs(color = "black") +
   theme(legend.position = c(.1, .9)) +
   NULL
 ```
